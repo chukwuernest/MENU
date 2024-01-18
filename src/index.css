@@ -138,3 +138,6 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
 }
+.photo {
+  height: 300px;
+}
