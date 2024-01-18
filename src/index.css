@@ -56,8 +56,9 @@ p {
 }
 main {
   min-height: 100vh;
-  /* display: grid;
-  place-items: center; */
+  display: grid;
+  place-items: center;
+  margin-right: 1rem;
 }
 .section {
   width: 90vw;
@@ -66,7 +67,7 @@ main {
 }
 .menu {
   padding: 5rem 0;
-  margin: 0 0 0 auto;
+  margin: auto auto;
 }
 .title {
   text-align: center;
@@ -87,11 +88,7 @@ main {
   justify-items: center;
   align-items: center;
 }
-.menu-item {
-  display: grid;
-  gap: 1rem 2rem;
-  max-width: 25rem;
-}
+
 .photo {
   object-fit: cover;
   height: 200px;
@@ -135,4 +132,9 @@ main {
 .filter-btn:hover {
   background-color: #c59d5f;
   color: #fff;
+}
+.section-centre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
 }
